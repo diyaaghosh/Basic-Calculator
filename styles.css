@@ -1,0 +1,115 @@
+:root {
+    --bg-color: rgb(29, 132, 118);
+    --text-color: #021018;
+    --text1-color: #000000;
+    --button-bg:rgb(29, 132, 118);
+    --button-hover:  rgb(11, 74, 72);
+    --button-active: rgb(9, 59, 62);
+    --button-shadow:10px 10px 5px  rgb(5, 34, 31);
+    --text-shadow:5px 5px 10px rgb(5, 38, 40);
+    --border-color:1px solid #031618;
+    --display-border:rgb(1, 1, 19);
+    --background: rgb(7, 57, 50);
+    --font-style:Georgia, 'Times New Roman', Times, serif;
+}
+
+[data-theme="dark"] {
+    --bg-color: #7d1b3a;
+    --text-color: #fff;
+    --text1-color: #c7e0e1;
+    --button-bg:  #7d1b3a;
+    --button-hover: #4e081c;
+    --button-active: #7b0836;
+    --button-shadow:10px 10px 5px  rgb(41, 4, 27);
+    --text-shadow:5px 5px 10px rgb(22, 2, 8);
+    --border-color:1px solid #1c0313;
+    --display-border:rgb(54, 3, 19);
+    --background: rgb(69, 8, 28);
+  
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: transparent;
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: var(--background);
+}
+
+.theme-switch {
+  
+    position: absolute;
+ top: 40px;
+ left: 20px;
+   
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.display {
+    height: 120px;
+    grid-column: span 4;
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+  border: var(--border-color);
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 10px;
+    box-shadow: var(--button-shadow);
+   padding: 10px;
+   font-family: var(--font-style);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.6rem;
+    border: var(--border-color) ;
+    border-style:ridge;
+    border-radius: 10px;
+    outline: none;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-color:  var(--bg-color);
+    transition: background-color 0.3s;
+    box-shadow: var(--button-shadow);
+    text-shadow: var(--text-shadow);
+    color: var(--text1-color);
+    font-family: var(--font-style);
+    z-index: 1;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+   
+}
+
+button:active {
+    background-color:var(--button-active) ;
+    z-index: 2;
+}
+
+.span-two {
+ 
+    grid-column: span 2;
+    
+}
+@media screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  
