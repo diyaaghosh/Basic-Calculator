@@ -119,7 +119,11 @@ button:active {
         width: 70px;
         height: 70px;
     }
-    
+    .span-two{
+        font-size: 1.4rem; 
+        width: 140px;
+        height: 70px;
+    }
     .display {
         height: 100px;
         font-size: 1.2rem;
@@ -137,7 +141,11 @@ button:active {
         width: 60px;
         height: 60px;
     }
-    
+     .span-two{
+        font-size: 1.2rem; 
+        width: 120px;
+        height: 60px;
+    }
     .display {
         height: 80px;
         font-size: 1rem;
@@ -155,7 +163,11 @@ button:active {
         width: 50px;
         height: 50px;
     }
-    
+    .span-two{
+        font-size: 1rem; 
+        width: 100px;
+        height: 50px;
+    }
     .display {
         height: 70px;
         font-size: 0.9rem;
@@ -173,7 +185,11 @@ button:active {
         width: 40px;
         height: 40px;
     }
-    
+    .span-two{
+        font-size: 0.8rem; 
+        width: 80px;
+        height: 40px;
+    }
     .display {
         height: 60px;
         font-size: 0.8rem;
