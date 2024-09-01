@@ -107,9 +107,75 @@ button:active {
     grid-column: span 2;
     
 }
-@media screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .calculator { 
+        grid-template-columns: repeat(4, 80px); 
+        grid-template-rows: minmax(100px, auto) repeat(5, 80px);
     }
-  }
-  
+    
+    button { 
+        font-size: 1.4rem; 
+        width: 70px;
+        height: 70px;
+    }
+    
+    .display {
+        height: 100px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .calculator { 
+        grid-template-columns: repeat(4, 60px); 
+        grid-template-rows: minmax(80px, auto) repeat(5, 60px);
+    }
+    
+    button { 
+        font-size: 1.2rem; 
+        width: 60px;
+        height: 60px;
+    }
+    
+    .display {
+        height: 80px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator { 
+        grid-template-columns: repeat(4, 50px); 
+        grid-template-rows: minmax(70px, auto) repeat(5, 50px);
+    }
+    
+    button { 
+        font-size: 1rem; 
+        width: 50px;
+        height: 50px;
+    }
+    
+    .display {
+        height: 70px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .calculator { 
+        grid-template-columns: repeat(4, 40px); 
+        grid-template-rows: minmax(60px, auto) repeat(5, 40px);
+    }
+    
+    button { 
+        font-size: 0.8rem; 
+        width: 40px;
+        height: 40px;
+    }
+    
+    .display {
+        height: 60px;
+        font-size: 0.8rem;
+    }
+}
