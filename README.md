@@ -32,7 +32,7 @@ Click the **"Change Background"** button to switch between vibrant background co
 3. Start calculating!
 
 ```bash
-git clone https://github.com/your-username/basic-calculator.git
+git clone https://github.com/diyaaghosh/basic-calculator.git
 cd basic-calculator
 ```
 open index.html
